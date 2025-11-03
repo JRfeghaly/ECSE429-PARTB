@@ -8,16 +8,8 @@ import org.json.JSONObject;
 
 public class Story2AddANewToDo {
 
-    private HttpResponse<String> response;
     private final HttpClient client = HttpClient.newHttpClient();
     private final String BASE_URL = "http://localhost:4567";
-
-    @Given("the server is running")
-    public void the_server_is_running() throws Exception {
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(BASE_URL + "/todos")).build();
-        response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        assertTrue(response.statusCode() == 200 || response.statusCode() == 404);
-    }
 
     @When("the user creates a new todo with title {string} and description {string}")
     public void the_user_creates_todo_with_title_and_description(String title, String description) throws Exception {
@@ -31,7 +23,7 @@ public class Story2AddANewToDo {
                 .POST(HttpRequest.BodyPublishers.ofString(body.toString()))
                 .build();
 
-        response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        CommonSteps.lastResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 
     @When("the user creates a todo with empty title and description {string}")
@@ -46,17 +38,12 @@ public class Story2AddANewToDo {
                 .POST(HttpRequest.BodyPublishers.ofString(body.toString()))
                 .build();
 
-        response = client.send(request, HttpResponse.BodyHandlers.ofString());
-    }
-
-    @Then("the response status should be {int}")
-    public void the_response_status_should_be(int code) {
-        assertEquals(code, response.statusCode());
+        CommonSteps.lastResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 
     @Then("the response contains a generated id")
     public void the_response_contains_generated_id() {
-        JSONObject json = new JSONObject(response.body());
+        JSONObject json = new JSONObject(CommonSteps.lastResponse.body());
         assertTrue(json.has("id"));
     }
 
@@ -71,6 +58,6 @@ public class Story2AddANewToDo {
 
     @Then("the response contains error message with keyword {string}")
     public void the_response_contains_error_with_keyword(String keyword) {
-        assertTrue(response.body().toLowerCase().contains(keyword.toLowerCase()));
+        assertTrue(CommonSteps.lastResponse.body().toLowerCase().contains(keyword.toLowerCase()));
     }
 }
