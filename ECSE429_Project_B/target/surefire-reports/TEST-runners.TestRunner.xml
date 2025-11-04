@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="2.517" tests="46" errors="0" skipped="27" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="3.13" tests="68" errors="0" skipped="49" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104005502781_3.jar /Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire 2025-11-04T00-55-02_729-jvmRun1 surefire-20251104005502781_1tmp surefire_0-20251104005502781_2tmp"/>
+    <property name="sun.java.command" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104020701538_3.jar /Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire 2025-11-04T02-07-01_498-jvmRun1 surefire-20251104020701538_1tmp surefire_0-20251104020701538_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/test-classes:/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/classes:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/antoinefeghali/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/antoinefeghali/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/antoinefeghali/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/antoinefeghali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104005502781_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104020701538_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="cucumber.plugin" value="pretty, html:target/cucumber-report.html"/>
@@ -92,32 +92,11 @@
   <testcase name="Example #1.1" classname="Examples" time="0.0">
     <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.948">
+  <testcase name="Example #1.1" classname="Examples" time="1.308">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Successfully add an existing task to a project (Normal Flow)                                    &amp#27;[90m# features/Story16CreateTaskToProject.feature:27&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                             &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description      | active |
     | Website Redesign | false     | UI improvements  | true   |
@@ -132,11 +111,11 @@ Scenario Outline: Successfully add an existing task to a project (Normal Flow)  
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.105">
+  <testcase name="Example #1.1" classname="Examples" time="0.107">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Add a task after creating a new project (Alternative Flow)                                    &amp#27;[90m# features/Story16CreateTaskToProject.feature:38&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description      | active |
     | Website Redesign | false     | UI improvements  | true   |
@@ -152,11 +131,11 @@ Scenario Outline: Add a task after creating a new project (Alternative Flow)    
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.069">
+  <testcase name="Example #1.1" classname="Examples" time="0.082">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Attempt to add a non-existing task to a project (Error Flow)                                                        &amp#27;[90m# features/Story16CreateTaskToProject.feature:47&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                                                 &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description      | active |
     | Website Redesign | false     | UI improvements  | true   |
@@ -171,16 +150,17 @@ Scenario Outline: Attempt to add a non-existing task to a project (Error Flow)  
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe project manager is notified of the error with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship projects/99/tasks"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_is_notified_of_the_error_with_the_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.103">
+  <testcase name="Example #1.1" classname="Examples" time="0.109">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Successfully remove a task from a project (Normal Flow)                       &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:27&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                 &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description     | active |
     | Mobile App       | false     | UI polish phase | true   |
     | Website Redesign | false     | UX improvement  | true   |
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.todos_with_the_following_details_exist(io.cucumber.datatable.DataTable)&amp#27;[0m
+✅ Created TODOs for linking test: {Implement dark mode=464, Fix navigation bugs=465}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title               | doneStatus | description          |
     | Implement dark mode | false      | finish remaining UI  |
     | Fix navigation bugs | false      | menu and back button |
@@ -188,49 +168,57 @@ Scenario Outline: Successfully remove a task from a project (Normal Flow)       
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager removes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Mobile App"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromProject(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe relationship between the TODO and the project is deleted successfully&amp#27;[0m                &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyTaskUnlinked()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe TODO no longer appears in the project’s task list&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.the_todo_no_longer_appears_in_the_project_s_task_list()&amp#27;[0m
+🧹 Deleted test TODO ID: 464
+🧹 Deleted test TODO ID: 465
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.058">
+  <testcase name="Example #1.1" classname="Examples" time="0.087">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Attempt to remove a non-linked task from a project (Alternate Flow)                                         &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:37&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description     | active |
     | Mobile App       | false     | UI polish phase | true   |
     | Website Redesign | false     | UX improvement  | true   |
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                                  &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.todos_with_the_following_details_exist(io.cucumber.datatable.DataTable)&amp#27;[0m
+✅ Created TODOs for linking test: {Implement dark mode=468, Fix navigation bugs=469}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                                  &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title               | doneStatus | description          |
     | Implement dark mode | false      | finish remaining UI  |
     | Fix navigation bugs | false      | menu and back button |
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m&amp#27;[32m exists but the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m is not linked&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectExistsButTodoNotLinked(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager tries to remove the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeUnlinkedTodo(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system returns a not found response with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find relationship projects/ID/tasks/TODO_ID to delete"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyNotFoundResponse(java.lang.String)&amp#27;[0m
+🧹 Deleted test TODO ID: 468
+🧹 Deleted test TODO ID: 469
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.024">
+  <testcase name="Example #1.1" classname="Examples" time="0.04">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Attempt to remove a task from a non-existent project (Error Flow)                                        &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:46&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description     | active |
     | Mobile App       | false     | UI polish phase | true   |
     | Website Redesign | false     | UX improvement  | true   |
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.todos_with_the_following_details_exist(io.cucumber.datatable.DataTable)&amp#27;[0m
+✅ Created TODOs for linking test: {Implement dark mode=470, Fix navigation bugs=471}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title               | doneStatus | description          |
     | Implement dark mode | false      | finish remaining UI  |
     | Fix navigation bugs | false      | menu and back button |
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"500"&amp#27;[0m&amp#27;[32m does not exist&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectDoesNotExist(java.lang.String)&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager tries to remove a TODO with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m from it&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromNonexistentProject(java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe API returns a not found response with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship projects/500/tasks"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyNotFoundErrorMessage(java.lang.String)&amp#27;[0m
+🧹 Deleted test TODO ID: 470
+🧹 Deleted test TODO ID: 471
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.101">
+  <testcase name="Example #1.1" classname="Examples" time="0.109">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link an existing category to an existing TODO (Normal Flow)                               &amp#27;[90m# features/Story18LinkTodoToCategory.feature:29&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
     | title                | doneStatus | description        |
     | Finish lab report    | false      | due this Friday    |
@@ -246,11 +234,11 @@ Scenario Outline: Link an existing category to an existing TODO (Normal Flow)   
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe student is notified of the completion of the linking operation&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.08">
+  <testcase name="Example #1.1" classname="Examples" time="0.097">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Attempt to relink a category already linked to a TODO (Alternate Flow)                 &amp#27;[90m# features/Story18LinkTodoToCategory.feature:40&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
     | title                | doneStatus | description        |
     | Finish lab report    | false      | due this Friday    |
@@ -266,11 +254,11 @@ Scenario Outline: Attempt to relink a category already linked to a TODO (Alterna
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe student is notified of a conflict with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Relationship already exists"&amp#27;[0m              &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfConflict(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.064">
+  <testcase name="Example #1.1" classname="Examples" time="0.077">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link a non-existing category to an existing TODO (Error Flow)                                                     &amp#27;[90m# features/Story18LinkTodoToCategory.feature:51&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                                        &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
     | title                | doneStatus | description        |
     | Finish lab report    | false      | due this Friday    |
@@ -287,11 +275,11 @@ Scenario Outline: Link a non-existing category to an existing TODO (Error Flow) 
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe student is notified of the non-existence error with a message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find thing matching value for id in categories"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfNonExistence(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.07">
+  <testcase name="Example #1.1" classname="Examples" time="0.074">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link an existing category to an existing project (Normal Flow)                           &amp#27;[90m# features/Story19LinkProjectToCategory.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title           | completed | description     | active |
     | Research Portal | false     | prototype phase | true   |
@@ -306,11 +294,11 @@ Scenario Outline: Link an existing category to an existing project (Normal Flow)
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe manager is notified of the completion of the linking operation&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.053">
+  <testcase name="Example #1.1" classname="Examples" time="0.081">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Attempt to relink a category already linked to a project (Alternate Flow)             &amp#27;[90m# features/Story19LinkProjectToCategory.feature:39&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                         &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title           | completed | description     | active |
     | Research Portal | false     | prototype phase | true   |
@@ -325,11 +313,11 @@ Scenario Outline: Attempt to relink a category already linked to a project (Alte
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe manager is notified of a conflict with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Relationship already exists"&amp#27;[0m             &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfConflict(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.055">
+  <testcase name="Example #1.1" classname="Examples" time="0.058">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link a non-existing category to an existing project (Error Flow)                                                  &amp#27;[90m# features/Story19LinkProjectToCategory.feature:50&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title           | completed | description     | active |
     | Research Portal | false     | prototype phase | true   |
@@ -345,11 +333,17 @@ Scenario Outline: Link a non-existing category to an existing project (Error Flo
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe manager is notified of the non-existence error with a message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find thing matching value for id in categories"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfNonExistence(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.125">
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.153">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: List TODOs for a category that has linked TODOs (Normal Flow) &amp#27;[90m# features/Story20GetTodosByCategory.feature:32&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                         &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title         | description          |
     | High Priority | urgent within 48 hrs |
@@ -368,11 +362,11 @@ Scenario Outline: List TODOs for a category that has linked TODOs (Normal Flow) 
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response includes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Prepare presentation"&amp#27;[0m                     &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIncludesTheTodo(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.046">
+  <testcase name="Example #1.1" classname="Examples" time="0.052">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Request TODOs for a non-existent category (Error Flow)                                                 &amp#27;[90m# features/Story20GetTodosByCategory.feature:49&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                                                                  &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title         | description          |
     | High Priority | urgent within 48 hrs |
@@ -389,7 +383,28 @@ Scenario Outline: Request TODOs for a non-existent category (Error Flow)        
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response indicates not found with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship categories/999/todos"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIndicatesNotFoundWithMessage(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.0">
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
     <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
   <testcase name="Example #1.2" classname="Examples" time="0.0">
@@ -401,20 +416,11 @@ Scenario Outline: Request TODOs for a non-existent category (Error Flow)        
   <testcase name="Example #1.2" classname="Examples" time="0.0">
     <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.0">
-    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
-  </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.092">
+  <testcase name="Example #1.2" classname="Examples" time="0.11">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Successfully add an existing task to a project (Normal Flow)                                      &amp#27;[90m# features/Story16CreateTaskToProject.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                               &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description      | active |
     | Website Redesign | false     | UI improvements  | true   |
@@ -429,16 +435,17 @@ Scenario Outline: Successfully add an existing task to a project (Normal Flow)  
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.089">
+  <testcase name="Example #1.2" classname="Examples" time="0.096">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Successfully remove a task from a project (Normal Flow)                             &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title            | completed | description     | active |
     | Mobile App       | false     | UI polish phase | true   |
     | Website Redesign | false     | UX improvement  | true   |
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.todos_with_the_following_details_exist(io.cucumber.datatable.DataTable)&amp#27;[0m
+✅ Created TODOs for linking test: {Implement dark mode=466, Fix navigation bugs=467}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title               | doneStatus | description          |
     | Implement dark mode | false      | finish remaining UI  |
     | Fix navigation bugs | false      | menu and back button |
@@ -446,13 +453,15 @@ Scenario Outline: Successfully remove a task from a project (Normal Flow)       
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager removes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Fix navigation bugs"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromProject(java.lang.String,java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe relationship between the TODO and the project is deleted successfully&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyTaskUnlinked()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe TODO no longer appears in the project’s task list&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.the_todo_no_longer_appears_in_the_project_s_task_list()&amp#27;[0m
+🧹 Deleted test TODO ID: 466
+🧹 Deleted test TODO ID: 467
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.087">
+  <testcase name="Example #1.2" classname="Examples" time="0.108">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link an existing category to an existing TODO (Normal Flow)                                    &amp#27;[90m# features/Story18LinkTodoToCategory.feature:30&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                    &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                    &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
     | title                | doneStatus | description        |
     | Finish lab report    | false      | due this Friday    |
@@ -468,11 +477,11 @@ Scenario Outline: Link an existing category to an existing TODO (Normal Flow)   
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe student is notified of the completion of the linking operation&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.061">
+  <testcase name="Example #1.2" classname="Examples" time="0.062">
     <system-out><![CDATA[
 @stories16to20
 Scenario Outline: Link an existing category to an existing project (Normal Flow)                    &amp#27;[90m# features/Story19LinkProjectToCategory.feature:29&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title           | completed | description     | active |
     | Research Portal | false     | prototype phase | true   |
@@ -487,6 +496,30 @@ Scenario Outline: Link an existing category to an existing project (Normal Flow)
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe manager is notified of the completion of the linking operation&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
   <testcase name="Example #1.3" classname="Examples" time="0.0">
     <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
@@ -496,11 +529,26 @@ Scenario Outline: Link an existing category to an existing project (Normal Flow)
   <testcase name="Retrieving all existing categories (Normal Flow)" classname="Search Categories" time="0.0">
     <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="List TODOs for a category that currently has no TODOs (Alternate Flow)" classname="Story 20 – Retrieve all TODOs for a given Category" time="0.06">
+  <testcase name="Retrieving a non-existent category (Error Flow)" classname="Search Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO to an existing category (Normal Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO that is already linked (Alternate Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO to a non-existent category (Error Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Retrieving all existing todos (Normal Flow)" classname="View All Todos" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="List TODOs for a category that currently has no TODOs (Alternate Flow)" classname="Story 20 – Retrieve all TODOs for a given Category" time="0.072">
     <system-out><![CDATA[
 @stories16to20
 Scenario: List TODOs for a category that currently has no TODOs (Alternate Flow) &amp#27;[90m# features/Story20GetTodosByCategory.feature:35&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.CommonSteps.theServerIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
     | title         | description          |
     | High Priority | urgent within 48 hrs |
@@ -516,5 +564,35 @@ Scenario: List TODOs for a category that currently has no TODOs (Alternate Flow)
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response is successful&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIsSuccessful()&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains no TODOs&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseContainsNoTodos()&amp#27;[0m
 ]]></system-out>
+  </testcase>
+  <testcase name="Adding a todo without a title (Error Flow)" classname="Add a New Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Updating a todo&apos;s title and description (Normal Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Updating only the description (Alternate Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Updating a non-existent todo (Error Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Marking a todo as done (Normal Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Marking an already done todo (Alternate Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Marking a non-existent todo as done (Error Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Deleting an existing todo (Normal Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Deleting the same todo twice (Alternate Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Deleting a non-existent todo (Error Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
 </testsuite>

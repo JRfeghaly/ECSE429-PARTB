@@ -168,7 +168,7 @@ public class Story17RemoveTaskFromProjectSteps {
         );
     }
 
-    @Given("TODOs with the following details exist")
+    @Given("TODOs with the following details exist in 17")
     public void todos_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
         List<Map<String, String>> todos = dataTable.asMaps(String.class, String.class);
         for (Map<String, String> todo : todos) {

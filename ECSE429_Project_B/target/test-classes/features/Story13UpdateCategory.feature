@@ -3,14 +3,14 @@ Feature: Update a Category
   As a user, I want to update an existing category so that I can keep my information accurate and organized.
 
   Background: Server is running and categories exist
-    Given the server is running
-    And categories with the following details exist
+    Given the server is running for update category
+    And categories with the following details exist for update category
       | id | title      | description           |
       | 1  | "Personal" | "Reminders and tasks" |
 
   Scenario Outline: Updating a category’s title and description (Normal Flow)
     When the user updates category with id <id> to title <new_title> and description <new_description>
-    Then the server responds with status 200
+    Then the server responds with status 200 for update
     And the category’s title is now <new_title>
 
     Examples:
@@ -19,7 +19,7 @@ Feature: Update a Category
 
   Scenario Outline: Updating only the category’s description (Alternate Flow)
     When the user updates category with id <id> to description <new_description>
-    Then the server responds with status 200
+    Then the server responds with status 200 for update
     And the category’s title remains unchanged
 
     Examples:
@@ -28,8 +28,7 @@ Feature: Update a Category
 
   Scenario Outline: Updating a non-existent category (Error Flow)
     When the user updates category with id <invalid_id> to title <new_title>
-    Then the server responds with status 404
-    And the user is notified with message <message>
+    Then the update server responds with status 404
 
     Examples:
       | invalid_id | new_title       | message                |

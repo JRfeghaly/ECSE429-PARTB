@@ -3,7 +3,7 @@ Feature: Create a New Category
   As a user, I want to create new categories so that I can organize my TODOs and projects effectively.
 
   Background: Server is running and no categories exist
-    Given the server is running
+    Given the server is running for category creation
     And the system has no existing categories
 
   Scenario Outline: Successfully creating a category with valid title and description (Normal Flow)
@@ -12,10 +12,10 @@ Feature: Create a New Category
     And the user is notified of the successful creation operation
 
     Examples:
-      | title         | description             |
-      | "School Work" | "Assignments and labs"  |
-      | "Personal"    | "Personal reminders"    |
-      | "Fitness"     | "Workout tracking"      |
+      | title         | description            |
+      | "School Work" | "Assignments and labs" |
+      | "Personal"    | "Personal reminders"   |
+      | "Fitness"     | "Workout tracking"     |
 
   Scenario Outline: Creating a category without an optional description (Alternate Flow)
     When the user creates a category with title <title> and no description
