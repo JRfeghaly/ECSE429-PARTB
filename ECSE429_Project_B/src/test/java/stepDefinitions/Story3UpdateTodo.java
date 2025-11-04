@@ -11,13 +11,24 @@ public class Story3UpdateTodo {
     private final String BASE_URL = "http://localhost:4567";
 
     @When("the user updates todo with id {int} to have title {string} and description {string}")
-    public void the_user_updates_todo_with_title_and_description(int id, String title, String description) throws Exception {
+    public void the_user_updates_todo_with_title_and_description(int idIndex, String title, String description) throws Exception {
+        // For idIndex 1 or 2, use the dynamic IDs
+        // For other IDs (like 99 for non-existent), use them directly
+        int actualId;
+        if (idIndex == 1) {
+            actualId = Story1ViewAllToDos.testTodoId1;
+        } else if (idIndex == 2) {
+            actualId = Story1ViewAllToDos.testTodoId2;
+        } else {
+            actualId = idIndex; // For non-existent IDs like 99
+        }
+        
         JSONObject body = new JSONObject();
         body.put("title", title);
         body.put("description", description);
 
         HttpRequest req = HttpRequest.newBuilder()
-                .uri(URI.create(BASE_URL + "/todos/" + id))
+                .uri(URI.create(BASE_URL + "/todos/" + actualId))
                 .header("Content-Type", "application/json")
                 .PUT(HttpRequest.BodyPublishers.ofString(body.toString()))
                 .build();
@@ -26,9 +37,12 @@ public class Story3UpdateTodo {
     }
 
     @Then("the todo with id {int} has title {string}")
-    public void the_todo_with_id_has_title(int id, String title) throws Exception {
+    public void the_todo_with_id_has_title(int idIndex, String title) throws Exception {
+        // idIndex 1 means testTodoId1 from Story1
+        int actualId = (idIndex == 1) ? Story1ViewAllToDos.testTodoId1 : Story1ViewAllToDos.testTodoId2;
+        
         HttpRequest req = HttpRequest.newBuilder()
-                .uri(URI.create(BASE_URL + "/todos/" + id))
+                .uri(URI.create(BASE_URL + "/todos/" + actualId))
                 .build();
         HttpResponse<String> getRes = client.send(req, HttpResponse.BodyHandlers.ofString());
         assertTrue(getRes.body().contains(title));

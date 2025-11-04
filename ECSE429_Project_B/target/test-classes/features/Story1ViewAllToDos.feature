@@ -19,7 +19,7 @@ Feature: View All Todos
     Examples:
       | id |
       | 1  |
-      | 3  |
+      | 2  |
 
   Scenario Outline: Retrieving a non-existent todo by ID (Error Flow)
     When the user retrieves the todo with id <id>
