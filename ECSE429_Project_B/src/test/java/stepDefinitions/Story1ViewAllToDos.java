@@ -1,11 +1,15 @@
 package stepDefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import java.net.http.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -15,6 +19,7 @@ public class Story1ViewAllToDos {
     private final String BASE_URL = "http://localhost:4567";
     public static int testTodoId1 = -1;
     public static int testTodoId2 = -1;
+    private static final List<Integer> createdTodoIds = new ArrayList<>();
 
     @Given("at least one todo exists")
     public void at_least_one_todo_exists() throws Exception {
@@ -38,6 +43,7 @@ public class Story1ViewAllToDos {
             HttpResponse<String> createRes1 = client.send(createReq1, HttpResponse.BodyHandlers.ofString());
             JSONObject todo1 = new JSONObject(createRes1.body());
             testTodoId1 = Integer.parseInt(todo1.getString("id"));
+            createdTodoIds.add(testTodoId1);
 
             // Create todo 2
             String body2 = "{\"title\":\"Test Todo 2\",\"doneStatus\":\"false\",\"description\":\"Test description 2\"}";
@@ -49,6 +55,7 @@ public class Story1ViewAllToDos {
             HttpResponse<String> createRes2 = client.send(createReq2, HttpResponse.BodyHandlers.ofString());
             JSONObject todo2 = new JSONObject(createRes2.body());
             testTodoId2 = Integer.parseInt(todo2.getString("id"));
+            createdTodoIds.add(testTodoId2);
         } else {
             // Use existing todos
             testTodoId1 = Integer.parseInt(arr.getJSONObject(0).getString("id"));
@@ -104,5 +111,26 @@ public class Story1ViewAllToDos {
         // idIndex 1 means testTodoId1, idIndex 2 means testTodoId2
         int actualId = (idIndex == 1) ? testTodoId1 : testTodoId2;
         assertTrue(CommonSteps.lastResponse.body().contains("\"id\":" + actualId) || CommonSteps.lastResponse.body().contains("\"id\":\"" + actualId + "\""));
+    }
+
+    // ===== Cleanup After Each Scenario =====
+    @After
+    public void cleanupCreatedTodos() {
+        // CommonSteps @After handles restoring testTodoId1 and testTodoId2
+        // We only need to delete additional todos created during this scenario
+        if (!createdTodoIds.isEmpty()) {
+            for (Integer id : createdTodoIds) {
+                try {
+                    HttpRequest deleteReq = HttpRequest.newBuilder()
+                            .uri(URI.create(BASE_URL + "/todos/" + id))
+                            .DELETE()
+                            .build();
+                    client.send(deleteReq, HttpResponse.BodyHandlers.ofString());
+                } catch (Exception e) {
+                    System.err.println("Failed to delete todo ID " + id + ": " + e.getMessage());
+                }
+            }
+            createdTodoIds.clear();
+        }
     }
 }
