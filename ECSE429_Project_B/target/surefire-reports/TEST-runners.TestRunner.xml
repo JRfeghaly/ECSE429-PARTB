@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="1.326" tests="27" errors="18" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="3.13" tests="68" errors="0" skipped="49" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/test-classes:/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/classes:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/jason/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/jason/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/jason/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jason/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/jason/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/jason/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/jason/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/jason/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/jason/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/jason/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/jason/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/jason/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/jason/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/jason/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/jason/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/jason/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/jason/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:"/>
+    <property name="java.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/test-classes:/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/classes:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/antoinefeghali/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/antoinefeghali/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/antoinefeghali/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/antoinefeghali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -13,45 +13,46 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251102200730002_3.jar /Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/surefire 2025-11-02T20-07-29_516-jvmRun1 surefire-20251102200730002_1tmp surefire_0-20251102200730002_2tmp"/>
+    <property name="sun.java.command" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104020701538_3.jar /Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire 2025-11-04T02-07-01_498-jvmRun1 surefire-20251104020701538_1tmp surefire_0-20251104020701538_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/test-classes:/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/classes:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/jason/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/jason/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/jason/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/jason/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jason/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/jason/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/jason/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/jason/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/jason/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/jason/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/jason/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/jason/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/jason/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/jason/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/jason/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/jason/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/jason/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/jason/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/jason/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/jason/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/jason/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/jason/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/jason/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/test-classes:/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/classes:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/antoinefeghali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/antoinefeghali/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/antoinefeghali/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/antoinefeghali/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/antoinefeghali/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/antoinefeghali/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/antoinefeghali/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/antoinefeghali/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/antoinefeghali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.15.0/cucumber-junit-platform-engine-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/antoinefeghali/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/antoinefeghali/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/antoinefeghali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/jason"/>
+    <property name="user.home" value="/Users/antoinefeghali"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2025-09-16"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B"/>
+    <property name="basedir" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251102200730002_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/target/surefire/surefirebooter-20251104020701538_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="cucumber.plugin" value="pretty, html:target/cucumber-report.html"/>
     <property name="java.runtime.version" value="25"/>
-    <property name="user.name" value="jason"/>
+    <property name="user.name" value="antoinefeghali"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="15.6.1"/>
+    <property name="os.version" value="15.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/jason/.m2/repository"/>
+    <property name="localRepository" value="/Users/antoinefeghali/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/nd/5svmd6mn67v44qlzpgw8fknh0000gn/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/fn/942tvvs13zzft296nq9vxtrh0000gn/T/"/>
     <property name="java.version" value="25"/>
-    <property name="user.dir" value="/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B"/>
+    <property name="cucumber.filter.tags" value="@stories16to20"/>
+    <property name="user.dir" value="/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/jason/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/antoinefeghali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Homebrew"/>
@@ -61,1017 +62,537 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="Example #1.1" classname="Examples" time="0.456">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and description {string}&quot;)&#10;public void the_user_creates_a_category_with_title_and_description(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and description {string}")
-public void the_user_creates_a_category_with_title_and_description(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="1.308">
     <system-out><![CDATA[
-Scenario Outline: Successfully creating a category with valid title and description (Normal Flow)  &amp#27;[90m# features/Story11CreateCategory.feature:16&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                      &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "School Work" and description "Assignments and labs"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "School Work" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
+@stories16to20
+Scenario Outline: Successfully add an existing task to a project (Normal Flow)                                    &amp#27;[90m# features/Story16CreateTaskToProject.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                             &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description      | active |
+    | Website Redesign | false     | UI improvements  | true   |
+    | Marketing Launch | false     | Campaign rollout | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in 16&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                 | doneStatus | description           |
+    | Create landing page   | false      | design initial layout |
+    | Schedule social posts | false      | for next 2 weeks      |
+    | Write product specs   | false      | version 1.0 draft     |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager adds a TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Create landing page"&amp#27;[0m&amp#27;[32m to a project with name &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_adds_a_todo_with_title_to_a_project_with_name(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Create landing page"&amp#27;[0m&amp#27;[32m is linked as a task under the project named &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m   &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_todo_with_title_is_linked_as_a_task_under_the_project_named(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.015">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and no description&quot;)&#10;public void the_user_creates_a_category_with_title_and_no_description(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and no description")
-public void the_user_creates_a_category_with_title_and_no_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.107">
     <system-out><![CDATA[
-Scenario Outline: Creating a category without an optional description (Alternate Flow) &amp#27;[90m# features/Story11CreateCategory.feature:27&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "Work" and no description&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "Work" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
+@stories16to20
+Scenario Outline: Add a task after creating a new project (Alternative Flow)                                    &amp#27;[90m# features/Story16CreateTaskToProject.feature:38&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description      | active |
+    | Website Redesign | false     | UI improvements  | true   |
+    | Marketing Launch | false     | Campaign rollout | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in 16&amp#27;[0m                                                              &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                 | doneStatus | description           |
+    | Create landing page   | false      | design initial layout |
+    | Schedule social posts | false      | for next 2 weeks      |
+    | Write product specs   | false      | version 1.0 draft     |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project manager creates a new project with name &amp#27;[0m&amp#27;[32m&amp#27;[1m"API Integration"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backend updates"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_creates_a_new_project_with_name_and_description(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager adds a TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Write product specs"&amp#27;[0m&amp#27;[32m to the project named &amp#27;[0m&amp#27;[32m&amp#27;[1m"API Integration"&amp#27;[0m  &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_adds_a_todo_with_title_to_the_project_named(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Write product specs"&amp#27;[0m&amp#27;[32m is linked as a task under the project named &amp#27;[0m&amp#27;[32m&amp#27;[1m"API Integration"&amp#27;[0m  &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_todo_with_title_is_linked_as_a_task_under_the_project_named(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.012">
-    <error message="The step &apos;the system has no existing categories&apos; and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and description {string}&quot;)&#10;public void the_user_creates_a_category_with_title_and_description(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the API should respond with an error message {string}&quot;)&#10;public void the_api_should_respond_with_an_error_message(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and description {string}")
-public void the_user_creates_a_category_with_title_and_description(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should respond with an error message {string}")
-public void the_api_should_respond_with_an_error_message(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.082">
     <system-out><![CDATA[
-Scenario Outline: Attempting to create a category with an empty title (Error Flow)  &amp#27;[90m# features/Story11CreateCategory.feature:37&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "" and description "Invalid category"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe API should respond with an error message "Invalid input parameters"&amp#27;[0m
+@stories16to20
+Scenario Outline: Attempt to add a non-existing task to a project (Error Flow)                                                        &amp#27;[90m# features/Story16CreateTaskToProject.feature:47&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                                                 &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description      | active |
+    | Website Redesign | false     | UI improvements  | true   |
+    | Marketing Launch | false     | Campaign rollout | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in 16&amp#27;[0m                                                                                    &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                 | doneStatus | description           |
+    | Create landing page   | false      | design initial layout |
+    | Schedule social posts | false      | for next 2 weeks      |
+    | Write product specs   | false      | version 1.0 draft     |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma TODO with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"99"&amp#27;[0m&amp#27;[32m does not exist&amp#27;[0m                                                                                            &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.a_todo_with_id_does_not_exist(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager adds a TODO with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"99"&amp#27;[0m&amp#27;[32m to a project named &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_adds_a_todo_with_id_to_a_project_named(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe project manager is notified of the error with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship projects/99/tasks"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_is_notified_of_the_error_with_the_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.039">
-    <error message="JSONObject[&quot;title&quot;] not found." type="org.json.JSONException"><![CDATA[org.json.JSONException: JSONObject["title"] not found.
-	at org.json.JSONObject.get(JSONObject.java:568)
-	at org.json.JSONObject.getString(JSONObject.java:855)
-	at stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(Story12SearchCategorySteps.java:78)
-	at ✽.the response includes a category with title "School Work" and description "Assignments and labs"(classpath:features/Story12SearchCategory.feature:23)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.109">
     <system-out><![CDATA[
-Scenario Outline: Retrieving a specific category by ID (Normal Flow)                                   &amp#27;[90m# features/Story12SearchCategory.feature:27&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                                      &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoryById(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe response includes a category with title &amp#27;[0m&amp#27;[31m&amp#27;[1m"School Work"&amp#27;[0m&amp#27;[31m and description &amp#27;[0m&amp#27;[31m&amp#27;[1m"Assignments and labs"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(java.lang.String,java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.json.JSONException: JSONObject["title"] not found.
-	at org.json.JSONObject.get(JSONObject.java:568)
-	at org.json.JSONObject.getString(JSONObject.java:855)
-	at stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(Story12SearchCategorySteps.java:78)
-	at ✽.the response includes a category with title "School Work" and description "Assignments and labs"(classpath:features/Story12SearchCategory.feature:23)
-&amp#27;[0m
+@stories16to20
+Scenario Outline: Successfully remove a task from a project (Normal Flow)                       &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                 &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description     | active |
+    | Mobile App       | false     | UI polish phase | true   |
+    | Website Redesign | false     | UX improvement  | true   |
+✅ Created TODOs for linking test: {Implement dark mode=464, Fix navigation bugs=465}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title               | doneStatus | description          |
+    | Implement dark mode | false      | finish remaining UI  |
+    | Fix navigation bugs | false      | menu and back button |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Mobile App"&amp#27;[0m&amp#27;[32m has the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m linked as a task&amp#27;[0m            &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectHasTodoLinked(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager removes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Mobile App"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromProject(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe relationship between the TODO and the project is deleted successfully&amp#27;[0m                &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyTaskUnlinked()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe TODO no longer appears in the project’s task list&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.the_todo_no_longer_appears_in_the_project_s_task_list()&amp#27;[0m
+🧹 Deleted test TODO ID: 464
+🧹 Deleted test TODO ID: 465
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.115">
+  <testcase name="Example #1.1" classname="Examples" time="0.087">
     <system-out><![CDATA[
-Scenario Outline: Searching categories by title filter (Alternate Flow)    &amp#27;[90m# features/Story12SearchCategory.feature:37&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                              &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Personal"&amp#27;[0m          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByTitle(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains only categories whose title matches &amp#27;[0m&amp#27;[32m&amp#27;[1m"Personal"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsOnlyMatchingTitle(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: Attempt to remove a non-linked task from a project (Alternate Flow)                                         &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:37&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description     | active |
+    | Mobile App       | false     | UI polish phase | true   |
+    | Website Redesign | false     | UX improvement  | true   |
+✅ Created TODOs for linking test: {Implement dark mode=468, Fix navigation bugs=469}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                                  &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title               | doneStatus | description          |
+    | Implement dark mode | false      | finish remaining UI  |
+    | Fix navigation bugs | false      | menu and back button |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m&amp#27;[32m exists but the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m is not linked&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectExistsButTodoNotLinked(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager tries to remove the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Implement dark mode"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeUnlinkedTodo(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system returns a not found response with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find relationship projects/ID/tasks/TODO_ID to delete"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyNotFoundResponse(java.lang.String)&amp#27;[0m
+🧹 Deleted test TODO ID: 468
+🧹 Deleted test TODO ID: 469
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.033">
+  <testcase name="Example #1.1" classname="Examples" time="0.04">
     <system-out><![CDATA[
-Scenario Outline: Searching categories by description filter (Alternate Flow)    &amp#27;[90m# features/Story12SearchCategory.feature:47&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Workout"&amp#27;[0m           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByDescription(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains only categories whose description includes &amp#27;[0m&amp#27;[32m&amp#27;[1m"Workout"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsOnlyMatchingDescription(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: Attempt to remove a task from a non-existent project (Error Flow)                                        &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:46&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description     | active |
+    | Mobile App       | false     | UI polish phase | true   |
+    | Website Redesign | false     | UX improvement  | true   |
+✅ Created TODOs for linking test: {Implement dark mode=470, Fix navigation bugs=471}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title               | doneStatus | description          |
+    | Implement dark mode | false      | finish remaining UI  |
+    | Fix navigation bugs | false      | menu and back button |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"500"&amp#27;[0m&amp#27;[32m does not exist&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectDoesNotExist(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager tries to remove a TODO with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m from it&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromNonexistentProject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe API returns a not found response with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship projects/500/tasks"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyNotFoundErrorMessage(java.lang.String)&amp#27;[0m
+🧹 Deleted test TODO ID: 470
+🧹 Deleted test TODO ID: 471
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.037">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(Story12SearchCategorySteps.java:127)
-	at ✽.the user is notified with message "Could not find category 99"(classpath:features/Story12SearchCategory.feature:53)
-]]></failure>
+  <testcase name="Example #1.1" classname="Examples" time="0.109">
     <system-out><![CDATA[
-Scenario Outline: Retrieving a non-existent category by ID (Error Flow) &amp#27;[90m# features/Story12SearchCategory.feature:57&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m99&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoryById(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe user is notified with message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Could not find category 99"&amp#27;[0m    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(Story12SearchCategorySteps.java:127)
-	at ✽.the user is notified with message "Could not find category 99"(classpath:features/Story12SearchCategory.feature:53)
-&amp#27;[0m
+@stories16to20
+Scenario Outline: Link an existing category to an existing TODO (Normal Flow)                               &amp#27;[90m# features/Story18LinkTodoToCategory.feature:29&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due this Friday    |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtodo categories with the following details exist&amp#27;[0m                                                      &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | description          |
+    | High Priority   | urgent within 48 hrs |
+    | Medium Priority | due this week        |
+    | Low Priority    | nice to have         |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe student links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"High Priority"&amp#27;[0m&amp#27;[32m to the TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.linkCategoryTitleToTodoTitle(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m&amp#27;[32m is linked to the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"High Priority"&amp#27;[0m         &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.verifyTodoLinkedToCategory(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe student is notified of the completion of the linking operation&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.036">
+  <testcase name="Example #1.1" classname="Examples" time="0.097">
     <system-out><![CDATA[
-Scenario Outline: Searching categories with a title that does not exist (Error Flow) &amp#27;[90m# features/Story12SearchCategory.feature:68&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                        &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nonexistent"&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByTitle(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains no matching categories&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsNoMatchingCategories()&amp#27;[0m
-✅ No matching categories found as expected.
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe user is notified that no results were found&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedNoResultsFound()&amp#27;[0m
+@stories16to20
+Scenario Outline: Attempt to relink a category already linked to a TODO (Alternate Flow)                 &amp#27;[90m# features/Story18LinkTodoToCategory.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due this Friday    |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtodo categories with the following details exist&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | description          |
+    | High Priority   | urgent within 48 hrs |
+    | Medium Priority | due this week        |
+    | Low Priority    | nice to have         |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Low Priority"&amp#27;[0m&amp#27;[32m is already linked to the TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Read chapter 3"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoryAlreadyLinkedToTodo(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe student links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Low Priority"&amp#27;[0m&amp#27;[32m to the TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Read chapter 3"&amp#27;[0m  &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.linkCategoryTitleToTodoTitle(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe student is notified of a conflict with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Relationship already exists"&amp#27;[0m              &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfConflict(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.012">
-    <error message="The step &apos;the user updates category with id 1 to title &quot;Personal V2&quot; and description &quot;Updated reminders&quot;&apos; and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;the user updates category with id {int} to title {string} and description {string}&quot;)&#10;public void the_user_updates_category_with_id_to_title_and_description(Integer int1, String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category’s title is now {string}&quot;)&#10;public void the_category_s_title_is_now(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the user updates category with id 1 to title "Personal V2" and description "Updated reminders"' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("the user updates category with id {int} to title {string} and description {string}")
-public void the_user_updates_category_with_id_to_title_and_description(Integer int1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category’s title is now {string}")
-public void the_category_s_title_is_now(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.077">
     <system-out><![CDATA[
-Scenario Outline: Updating a category’s title and description (Normal Flow)                           &amp#27;[90m# features/Story13UpdateCategory.feature:18&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                         &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title      | description           |
-    | 1  | "Personal" | "Reminders and tasks" |
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mthe user updates category with id 1 to title "Personal V2" and description "Updated reminders"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe category’s title is now "Personal V2"&amp#27;[0m
+@stories16to20
+Scenario Outline: Link a non-existing category to an existing TODO (Error Flow)                                                     &amp#27;[90m# features/Story18LinkTodoToCategory.feature:51&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                                        &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due this Friday    |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtodo categories with the following details exist&amp#27;[0m                                                                              &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | description          |
+    | High Priority   | urgent within 48 hrs |
+    | Medium Priority | due this week        |
+    | Low Priority    | nice to have         |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m does not exist&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoryWithIdDoesNotExist(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m&amp#27;[32m exists&amp#27;[0m                                                                                  &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.aTodoWithTitleExistsUnique(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe student links the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m to the TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.linkNonExistingCategoryIdToTodoTitle(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe student is notified of the non-existence error with a message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find thing matching value for id in categories"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfNonExistence(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.015">
-    <error message="The step &apos;the user updates category with id 1 to description &quot;Only description&quot;&apos; and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;the user updates category with id {int} to description {string}&quot;)&#10;public void the_user_updates_category_with_id_to_description(Integer int1, String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category’s title remains unchanged&quot;)&#10;public void the_category_s_title_remains_unchanged() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the user updates category with id 1 to description "Only description"' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("the user updates category with id {int} to description {string}")
-public void the_user_updates_category_with_id_to_description(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category’s title remains unchanged")
-public void the_category_s_title_remains_unchanged() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.074">
     <system-out><![CDATA[
-Scenario Outline: Updating only the category’s description (Alternate Flow)  &amp#27;[90m# features/Story13UpdateCategory.feature:27&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title      | description           |
-    | 1  | "Personal" | "Reminders and tasks" |
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mthe user updates category with id 1 to description "Only description"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe category’s title remains unchanged&amp#27;[0m
+@stories16to20
+Scenario Outline: Link an existing category to an existing project (Normal Flow)                           &amp#27;[90m# features/Story19LinkProjectToCategory.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | completed | description     | active |
+    | Research Portal | false     | prototype phase | true   |
+    | Data Cleanup    | false     | ETL refactor    | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mproject categories records with the following details exist&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title       | description            |
+    | In Progress | active development     |
+    | Backlog     | planned but not active |
+    | Completed   | delivered              |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe manager links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"In Progress"&amp#27;[0m&amp#27;[32m to the project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.linkCategoryToProjectByTitles(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m&amp#27;[32m is linked to the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"In Progress"&amp#27;[0m         &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.verifyProjectLinkedToCategory(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe manager is notified of the completion of the linking operation&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.013">
-    <error message="The step &apos;the user updates category with id 999 to title &quot;Ghost Category&quot;&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;the user updates category with id {int} to title {string}&quot;)&#10;public void the_user_updates_category_with_id_to_title(Integer int1, String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the user updates category with id 999 to title "Ghost Category"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("the user updates category with id {int} to title {string}")
-public void the_user_updates_category_with_id_to_title(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.081">
     <system-out><![CDATA[
-Scenario Outline: Updating a non-existent category (Error Flow)        &amp#27;[90m# features/Story13UpdateCategory.feature:36&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title      | description           |
-    | 1  | "Personal" | "Reminders and tasks" |
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mthe user updates category with id 999 to title "Ghost Category"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m404&amp#27;[0m                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified with message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Could not find category 999"&amp#27;[0m  &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: Attempt to relink a category already linked to a project (Alternate Flow)             &amp#27;[90m# features/Story19LinkProjectToCategory.feature:39&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                           &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                         &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | completed | description     | active |
+    | Research Portal | false     | prototype phase | true   |
+    | Data Cleanup    | false     | ETL refactor    | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mproject categories records with the following details exist&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title       | description            |
+    | In Progress | active development     |
+    | Backlog     | planned but not active |
+    | Completed   | delivered              |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m&amp#27;[32m is already linked to the project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoryAlreadyLinkedToProject(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe manager links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m&amp#27;[32m to the project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m  &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.linkCategoryToProjectByTitles(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe manager is notified of a conflict with the message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Relationship already exists"&amp#27;[0m             &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfConflict(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.013">
-    <error message="The step &apos;the user deletes category with id 2&apos; and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;the user deletes category with id {int}&quot;)&#10;public void the_user_deletes_category_with_id(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with id {int} should no longer exist&quot;)&#10;public void the_category_with_id_should_no_longer_exist(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the user deletes category with id 2' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("the user deletes category with id {int}")
-public void the_user_deletes_category_with_id(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with id {int} should no longer exist")
-public void the_category_with_id_should_no_longer_exist(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.058">
     <system-out><![CDATA[
-Scenario Outline: Deleting an existing category (Normal Flow) &amp#27;[90m# features/Story14DeleteCategory.feature:18&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title       | description        |
-    | 2  | "Temporary" | "Short-term tasks" |
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mthe user deletes category with id 2&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe category with id 2 should no longer exist&amp#27;[0m
+@stories16to20
+Scenario Outline: Link a non-existing category to an existing project (Error Flow)                                                  &amp#27;[90m# features/Story19LinkProjectToCategory.feature:50&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                                                     &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | completed | description     | active |
+    | Research Portal | false     | prototype phase | true   |
+    | Data Cleanup    | false     | ETL refactor    | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mproject categories records with the following details exist&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title       | description            |
+    | In Progress | active development     |
+    | Backlog     | planned but not active |
+    | Completed   | delivered              |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mno category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m exists&amp#27;[0m                                                                                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoryWithIdDoesNotExist(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m&amp#27;[32m exists&amp#27;[0m                                                                                 &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.ensureProjectWithTitleExists(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe manager links the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m&amp#27;[32m to the project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Research Portal"&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.linkNonExistingCategoryToProject(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe manager is notified of the non-existence error with a message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find thing matching value for id in categories"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfNonExistence(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.012">
-    <error message="The step &apos;category with id 2 was deleted previously&apos; and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;category with id {int} was deleted previously&quot;)&#10;public void category_with_id_was_deleted_previously(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user deletes category with id {int}&quot;)&#10;public void the_user_deletes_category_with_id(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'category with id 2 was deleted previously' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("category with id {int} was deleted previously")
-public void category_with_id_was_deleted_previously(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user deletes category with id {int}")
-public void the_user_deletes_category_with_id(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.153">
     <system-out><![CDATA[
-Scenario Outline: Deleting a category that was already deleted (Alternate Flow) &amp#27;[90m# features/Story14DeleteCategory.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                               &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title       | description        |
-    | 2  | "Temporary" | "Short-term tasks" |
-  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mcategory with id 2 was deleted previously&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user deletes category with id 2&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m404&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified with message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Category not found for deletion"&amp#27;[0m       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: List TODOs for a category that has linked TODOs (Normal Flow) &amp#27;[90m# features/Story20GetTodosByCategory.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                         &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title         | description          |
+    | High Priority | urgent within 48 hrs |
+    | Backlog       | planned items        |
+    | Reading       | study-related tasks  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategory TODOs with the following details exist&amp#27;[0m                           &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due Friday         |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe category &amp#27;[0m&amp#27;[32m&amp#27;[1m"High Priority"&amp#27;[0m&amp#27;[32m has the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m&amp#27;[32m linked&amp#27;[0m    &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theCategoryHasTheTodoLinked(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe category &amp#27;[0m&amp#27;[32m&amp#27;[1m"High Priority"&amp#27;[0m&amp#27;[32m has the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Prepare presentation"&amp#27;[0m&amp#27;[32m linked&amp#27;[0m   &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theCategoryHasTheTodoLinked(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user requests all TODOs for the category &amp#27;[0m&amp#27;[32m&amp#27;[1m"High Priority"&amp#27;[0m             &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theUserRequestsAllTodosForTheCategory(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response is successful&amp#27;[0m                                               &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIsSuccessful()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response includes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Finish lab report"&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIncludesTheTodo(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response includes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Prepare presentation"&amp#27;[0m                     &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIncludesTheTodo(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.021">
-    <error message="The step &apos;the user deletes category with id &quot;abc&quot;&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;the user deletes category with id {string}&quot;)&#10;public void the_user_deletes_category_with_id(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the user deletes category with id "abc"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("the user deletes category with id {string}")
-public void the_user_deletes_category_with_id(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.052">
     <system-out><![CDATA[
-Scenario Outline: Deleting a category with invalid ID format (Error Flow) &amp#27;[90m# features/Story14DeleteCategory.feature:37&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                         &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title       | description        |
-    | 2  | "Temporary" | "Short-term tasks" |
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mthe user deletes category with id "abc"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m400&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified with message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Invalid ID format"&amp#27;[0m               &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: Request TODOs for a non-existent category (Error Flow)                                                 &amp#27;[90m# features/Story20GetTodosByCategory.feature:49&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                            &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                                                                  &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title         | description          |
+    | High Priority | urgent within 48 hrs |
+    | Backlog       | planned items        |
+    | Reading       | study-related tasks  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategory TODOs with the following details exist&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due Friday         |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthat there is no category with &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m                                                                             &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.thatThereIsNoCategoryWith(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user requests all TODOs for the category id &amp#27;[0m&amp#27;[32m&amp#27;[1m"999"&amp#27;[0m                                                             &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theUserRequestsAllTodosForTheCategoryId(java.lang.String)&amp#27;[0m
+[Warning] Thingifier returned todos for non-existent category. Accepting for test stability.
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response indicates not found with message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Could not find parent thing for relationship categories/999/todos"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIndicatesNotFoundWithMessage(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.01">
-    <error message="The step &apos;a category with id 3 and title &quot;University&quot; exists&apos; and 4 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;a category with id {int} and title {string} exists&quot;)&#10;public void a_category_with_id_and_title_exists(Integer int1, String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;TODOs with the following details exist&quot;)&#10;public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;Projects with the following details exist&quot;)&#10;public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user links TODO with id {int} to category with id {int}&quot;)&#10;public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with id {int} now includes TODO {int}&quot;)&#10;public void the_category_with_id_now_includes_todo(Integer int1, Integer int2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'a category with id 3 and title "University" exists' and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("a category with id {int} and title {string} exists")
-public void a_category_with_id_and_title_exists(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("TODOs with the following details exist")
-public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Projects with the following details exist")
-public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user links TODO with id {int} to category with id {int}")
-public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with id {int} now includes TODO {int}")
-public void the_category_with_id_now_includes_todo(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.11">
     <system-out><![CDATA[
-Scenario Outline: Linking a TODO to an existing category (Normal Flow) &amp#27;[90m# features/Story15LinkCategoryRelations.feature:22&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33ma category with id 3 and title "University" exists&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mTODOs with the following details exist&amp#27;[0m
-    | id | title                 | doneStatus | description   |
-    | 10 | "Complete Assignment" | false      | "CS homework" |
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mProjects with the following details exist&amp#27;[0m
-    | id | title           | description      |
-    | 20 | "Capstone Demo" | "Prepare slides" |
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user links TODO with id 10 to category with id 3&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m201&amp#27;[0m                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe category with id 3 now includes TODO 10&amp#27;[0m
+@stories16to20
+Scenario Outline: Successfully add an existing task to a project (Normal Flow)                                      &amp#27;[90m# features/Story16CreateTaskToProject.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist in 16&amp#27;[0m                                                               &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description      | active |
+    | Website Redesign | false     | UI improvements  | true   |
+    | Marketing Launch | false     | Campaign rollout | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in 16&amp#27;[0m                                                                  &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                 | doneStatus | description           |
+    | Create landing page   | false      | design initial layout |
+    | Schedule social posts | false      | for next 2 weeks      |
+    | Write product specs   | false      | version 1.0 draft     |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager adds a TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Schedule social posts"&amp#27;[0m&amp#27;[32m to a project with name &amp#27;[0m&amp#27;[32m&amp#27;[1m"Marketing Launch"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_adds_a_todo_with_title_to_a_project_with_name(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Schedule social posts"&amp#27;[0m&amp#27;[32m is linked as a task under the project named &amp#27;[0m&amp#27;[32m&amp#27;[1m"Marketing Launch"&amp#27;[0m   &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_todo_with_title_is_linked_as_a_task_under_the_project_named(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe project manager receives a confirmation of successful linking&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story16CreateTaskToProjectSteps.the_project_manager_receives_a_confirmation_of_successful_linking()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.007">
-    <error message="The step &apos;a category with id 3 and title &quot;University&quot; exists&apos; and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;a category with id {int} and title {string} exists&quot;)&#10;public void a_category_with_id_and_title_exists(Integer int1, String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;TODOs with the following details exist&quot;)&#10;public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;Projects with the following details exist&quot;)&#10;public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;TODO with id {int} is already linked to category {int}&quot;)&#10;public void todo_with_id_is_already_linked_to_category(Integer int1, Integer int2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user links TODO with id {int} to category with id {int}&quot;)&#10;public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;no duplicate link is created&quot;)&#10;public void no_duplicate_link_is_created() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'a category with id 3 and title "University" exists' and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("a category with id {int} and title {string} exists")
-public void a_category_with_id_and_title_exists(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("TODOs with the following details exist")
-public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Projects with the following details exist")
-public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Given("TODO with id {int} is already linked to category {int}")
-public void todo_with_id_is_already_linked_to_category(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user links TODO with id {int} to category with id {int}")
-public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("no duplicate link is created")
-public void no_duplicate_link_is_created() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.2" classname="Examples" time="0.096">
     <system-out><![CDATA[
-Scenario Outline: Linking a TODO that is already linked (Alternate Flow) &amp#27;[90m# features/Story15LinkCategoryRelations.feature:32&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                            &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33ma category with id 3 and title "University" exists&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mTODOs with the following details exist&amp#27;[0m
-    | id | title                 | doneStatus | description   |
-    | 10 | "Complete Assignment" | false      | "CS homework" |
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mProjects with the following details exist&amp#27;[0m
-    | id | title           | description      |
-    | 20 | "Capstone Demo" | "Prepare slides" |
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mTODO with id 10 is already linked to category 3&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user links TODO with id 10 to category with id 3&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                               &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mno duplicate link is created&amp#27;[0m
+@stories16to20
+Scenario Outline: Successfully remove a task from a project (Normal Flow)                             &amp#27;[90m# features/Story17RemoveTaskFromProject.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                         &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title            | completed | description     | active |
+    | Mobile App       | false     | UI polish phase | true   |
+    | Website Redesign | false     | UX improvement  | true   |
+✅ Created TODOs for linking test: {Implement dark mode=466, Fix navigation bugs=467}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story15LinkTodoProjectCategorySteps.todosExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title               | doneStatus | description          |
+    | Implement dark mode | false      | finish remaining UI  |
+    | Fix navigation bugs | false      | menu and back button |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m&amp#27;[32m has the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Fix navigation bugs"&amp#27;[0m&amp#27;[32m linked as a task&amp#27;[0m            &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.projectHasTodoLinked(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe project manager removes the TODO &amp#27;[0m&amp#27;[32m&amp#27;[1m"Fix navigation bugs"&amp#27;[0m&amp#27;[32m from the project &amp#27;[0m&amp#27;[32m&amp#27;[1m"Website Redesign"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.removeTodoFromProject(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe relationship between the TODO and the project is deleted successfully&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.verifyTaskUnlinked()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe TODO no longer appears in the project’s task list&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story17RemoveTaskFromProjectSteps.the_todo_no_longer_appears_in_the_project_s_task_list()&amp#27;[0m
+🧹 Deleted test TODO ID: 466
+🧹 Deleted test TODO ID: 467
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.1" classname="Examples" time="0.006">
-    <error message="The step &apos;a category with id 3 and title &quot;University&quot; exists&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;a category with id {int} and title {string} exists&quot;)&#10;public void a_category_with_id_and_title_exists(Integer int1, String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;TODOs with the following details exist&quot;)&#10;public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;Projects with the following details exist&quot;)&#10;public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user links TODO with id {int} to category with id {int}&quot;)&#10;public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'a category with id 3 and title "University" exists' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("a category with id {int} and title {string} exists")
-public void a_category_with_id_and_title_exists(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("TODOs with the following details exist")
-public void tod_os_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Projects with the following details exist")
-public void projects_with_the_following_details_exist(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user links TODO with id {int} to category with id {int}")
-public void the_user_links_todo_with_id_to_category_with_id(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.2" classname="Examples" time="0.108">
     <system-out><![CDATA[
-Scenario Outline: Linking a TODO to a non-existent category (Error Flow)                                    &amp#27;[90m# features/Story15LinkCategoryRelations.feature:41&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33ma category with id 3 and title "University" exists&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mTODOs with the following details exist&amp#27;[0m
-    | id | title                 | doneStatus | description   |
-    | 10 | "Complete Assignment" | false      | "CS homework" |
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mProjects with the following details exist&amp#27;[0m
-    | id | title           | description      |
-    | 20 | "Capstone Demo" | "Prepare slides" |
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user links TODO with id 10 to category with id 999&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe server responds with status &amp#27;[0m&amp#27;[36m&amp#27;[1m404&amp#27;[0m                                                                  &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified with message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Could not find parent thing for relationship categories/999/todos"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
+@stories16to20
+Scenario Outline: Link an existing category to an existing TODO (Normal Flow)                                    &amp#27;[90m# features/Story18LinkTodoToCategory.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                    &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mTODOs with the following details exist in the system &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.todosWithTheFollowingDetailsExistInTheSystem(java.lang.Integer,io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due this Friday    |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtodo categories with the following details exist&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | description          |
+    | High Priority   | urgent within 48 hrs |
+    | Medium Priority | due this week        |
+    | Low Priority    | nice to have         |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe student links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Medium Priority"&amp#27;[0m&amp#27;[32m to the TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Prepare presentation"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.linkCategoryTitleToTodoTitle(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe TODO with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Prepare presentation"&amp#27;[0m&amp#27;[32m is linked to the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Medium Priority"&amp#27;[0m         &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.verifyTodoLinkedToCategory(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe student is notified of the completion of the linking operation&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.Story18LinkTodoToCategorySteps.notifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.012">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and description {string}&quot;)&#10;public void the_user_creates_a_category_with_title_and_description(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and description {string}")
-public void the_user_creates_a_category_with_title_and_description(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.2" classname="Examples" time="0.062">
     <system-out><![CDATA[
-Scenario Outline: Successfully creating a category with valid title and description (Normal Flow) &amp#27;[90m# features/Story11CreateCategory.feature:17&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                     &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "Personal" and description "Personal reminders"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "Personal" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
+@stories16to20
+Scenario Outline: Link an existing category to an existing project (Normal Flow)                    &amp#27;[90m# features/Story19LinkProjectToCategory.feature:29&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprojects with the following details exist&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.projectsWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title           | completed | description     | active |
+    | Research Portal | false     | prototype phase | true   |
+    | Data Cleanup    | false     | ETL refactor    | true   |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mproject categories records with the following details exist&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.categoriesWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title       | description            |
+    | In Progress | active development     |
+    | Backlog     | planned but not active |
+    | Completed   | delivered              |
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe manager links the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m&amp#27;[32m to the project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Data Cleanup"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.linkCategoryToProjectByTitles(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe project with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Data Cleanup"&amp#27;[0m&amp#27;[32m is linked to the category with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m         &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.verifyProjectLinkedToCategory(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe manager is notified of the completion of the linking operation&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Story19LinkProjectToCategorySteps.managerNotifiedOfCompletion()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.008">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and no description&quot;)&#10;public void the_user_creates_a_category_with_title_and_no_description(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and no description")
-public void the_user_creates_a_category_with_title_and_no_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Retrieving all existing categories (Normal Flow)" classname="Search Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Retrieving a non-existent category (Error Flow)" classname="Search Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO to an existing category (Normal Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO that is already linked (Alternate Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Linking a TODO to a non-existent category (Error Flow)" classname="Link TODOs and Projects to Categories" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Retrieving all existing todos (Normal Flow)" classname="View All Todos" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="List TODOs for a category that currently has no TODOs (Alternate Flow)" classname="Story 20 – Retrieve all TODOs for a given Category" time="0.072">
     <system-out><![CDATA[
-Scenario Outline: Creating a category without an optional description (Alternate Flow) &amp#27;[90m# features/Story11CreateCategory.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "Chores" and no description&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "Chores" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
+@stories16to20
+Scenario: List TODOs for a category that currently has no TODOs (Alternate Flow) &amp#27;[90m# features/Story20GetTodosByCategory.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist in 20&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title         | description          |
+    | High Priority | urgent within 48 hrs |
+    | Backlog       | planned items        |
+    | Reading       | study-related tasks  |
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategory TODOs with the following details exist&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.todosWithTheFollowingDetailsExist(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | title                | doneStatus | description        |
+    | Finish lab report    | false      | due Friday         |
+    | Prepare presentation | false      | slides + rehearsal |
+    | Read chapter 3       | false      | notes for seminar  |
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe category &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m&amp#27;[32m exists and has no linked TODOs&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theCategoryExistsAndHasNoLinkedTodos(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user requests all TODOs for the category &amp#27;[0m&amp#27;[32m&amp#27;[1m"Backlog"&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theUserRequestsAllTodosForTheCategory(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response is successful&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseIsSuccessful()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains no TODOs&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story20GetTodosByCategorySteps.theResponseContainsNoTodos()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.043">
-    <error message="JSONObject[&quot;title&quot;] not found." type="org.json.JSONException"><![CDATA[org.json.JSONException: JSONObject["title"] not found.
-	at org.json.JSONObject.get(JSONObject.java:568)
-	at org.json.JSONObject.getString(JSONObject.java:855)
-	at stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(Story12SearchCategorySteps.java:78)
-	at ✽.the response includes a category with title "Fitness" and description "Workout and nutrition"(classpath:features/Story12SearchCategory.feature:23)
-]]></error>
-    <system-out><![CDATA[
-Scenario Outline: Retrieving a specific category by ID (Normal Flow)                                &amp#27;[90m# features/Story12SearchCategory.feature:28&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                                   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m                                                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoryById(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe response includes a category with title &amp#27;[0m&amp#27;[31m&amp#27;[1m"Fitness"&amp#27;[0m&amp#27;[31m and description &amp#27;[0m&amp#27;[31m&amp#27;[1m"Workout and nutrition"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(java.lang.String,java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.json.JSONException: JSONObject["title"] not found.
-	at org.json.JSONObject.get(JSONObject.java:568)
-	at org.json.JSONObject.getString(JSONObject.java:855)
-	at stepDefinitions.Story12SearchCategorySteps.responseIncludesCategoryWithTitleAndDescription(Story12SearchCategorySteps.java:78)
-	at ✽.the response includes a category with title "Fitness" and description "Workout and nutrition"(classpath:features/Story12SearchCategory.feature:23)
-&amp#27;[0m
-]]></system-out>
+  <testcase name="Adding a todo without a title (Error Flow)" classname="Add a New Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.033">
-    <system-out><![CDATA[
-Scenario Outline: Searching categories by title filter (Alternate Flow)   &amp#27;[90m# features/Story12SearchCategory.feature:38&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                         &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Hobbies"&amp#27;[0m          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByTitle(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains only categories whose title matches &amp#27;[0m&amp#27;[32m&amp#27;[1m"Hobbies"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsOnlyMatchingTitle(java.lang.String)&amp#27;[0m
-]]></system-out>
+  <testcase name="Updating a todo&apos;s title and description (Normal Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.029">
-    <system-out><![CDATA[
-Scenario Outline: Searching categories by description filter (Alternate Flow)        &amp#27;[90m# features/Story12SearchCategory.feature:48&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                        &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Assignments"&amp#27;[0m           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByDescription(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains only categories whose description includes &amp#27;[0m&amp#27;[32m&amp#27;[1m"Assignments"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsOnlyMatchingDescription(java.lang.String)&amp#27;[0m
-]]></system-out>
+  <testcase name="Updating only the description (Alternate Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.076">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(Story12SearchCategorySteps.java:127)
-	at ✽.the user is notified with message "Could not find category 500"(classpath:features/Story12SearchCategory.feature:53)
-]]></failure>
-    <system-out><![CDATA[
-Scenario Outline: Retrieving a non-existent category by ID (Error Flow) &amp#27;[90m# features/Story12SearchCategory.feature:58&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the category with id &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoryById(int)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe user is notified with message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Could not find category 500"&amp#27;[0m   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at stepDefinitions.Story12SearchCategorySteps.userIsNotifiedWithMessage(Story12SearchCategorySteps.java:127)
-	at ✽.the user is notified with message "Could not find category 500"(classpath:features/Story12SearchCategory.feature:53)
-&amp#27;[0m
-]]></system-out>
+  <testcase name="Updating a non-existent todo (Error Flow)" classname="Update an Existing Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.2" classname="Examples" time="0.033">
-    <system-out><![CDATA[
-Scenario Outline: Searching categories with a title that does not exist (Error Flow) &amp#27;[90m# features/Story12SearchCategory.feature:69&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                        &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves categories filtered by title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Unknown"&amp#27;[0m                     &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesCategoriesFilteredByTitle(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains no matching categories&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsNoMatchingCategories()&amp#27;[0m
-✅ No matching categories found as expected.
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe user is notified that no results were found&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userIsNotifiedNoResultsFound()&amp#27;[0m
-]]></system-out>
+  <testcase name="Marking a todo as done (Normal Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.3" classname="Examples" time="0.01">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and description {string}&quot;)&#10;public void the_user_creates_a_category_with_title_and_description(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and description {string}")
-public void the_user_creates_a_category_with_title_and_description(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
-    <system-out><![CDATA[
-Scenario Outline: Successfully creating a category with valid title and description (Normal Flow) &amp#27;[90m# features/Story11CreateCategory.feature:18&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                     &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "Fitness" and description "Workout tracking"&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "Fitness" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
-]]></system-out>
+  <testcase name="Marking an already done todo (Alternate Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Example #1.3" classname="Examples" time="0.01">
-    <error message="The step &apos;the system has no existing categories&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the system has no existing categories&quot;)&#10;public void the_system_has_no_existing_categories() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user creates a category with title {string} and no description&quot;)&#10;public void the_user_creates_a_category_with_title_and_no_description(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the category with title {string} should be successfully created&quot;)&#10;public void the_category_with_title_should_be_successfully_created(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user is notified of the successful creation operation&quot;)&#10;public void the_user_is_notified_of_the_successful_creation_operation() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
-The step 'the system has no existing categories' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the system has no existing categories")
-public void the_system_has_no_existing_categories() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user creates a category with title {string} and no description")
-public void the_user_creates_a_category_with_title_and_no_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the category with title {string} should be successfully created")
-public void the_category_with_title_should_be_successfully_created(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user is notified of the successful creation operation")
-public void the_user_is_notified_of_the_successful_creation_operation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.junit.platform.engine.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:22)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:114)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
-	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></error>
-    <system-out><![CDATA[
-Scenario Outline: Creating a category without an optional description (Alternate Flow) &amp#27;[90m# features/Story11CreateCategory.feature:29&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe system has no existing categories&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe user creates a category with title "Reading" and no description&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe category with title "Reading" should be successfully created&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe user is notified of the successful creation operation&amp#27;[0m
-]]></system-out>
+  <testcase name="Marking a non-existent todo as done (Error Flow)" classname="Mark Todo as Done" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
-  <testcase name="Retrieving all existing categories (Normal Flow)" classname="Search Categories" time="0.059">
-    <system-out><![CDATA[
-Scenario: Retrieving all existing categories (Normal Flow)           &amp#27;[90m# features/Story12SearchCategory.feature:14&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                        &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.theServerIsRunning()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mcategories with the following details exist&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoriesExist(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | id | title         | description              |
-    | 1  | "School Work" | "Assignments and labs"   |
-    | 2  | "Personal"    | "Daily personal tasks"   |
-    | 3  | "Fitness"     | "Workout and nutrition"  |
-    | 4  | "Hobbies"     | "Creative weekend plans" |
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves all categories&amp#27;[0m                             &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.userRetrievesAllCategories()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe server responds with status &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                           &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.serverRespondsWithStatus(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains all existing categories&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.responseContainsAllExistingCategories()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32meach category includes fields &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"title"&amp#27;[0m&amp#27;[32m, and &amp#27;[0m&amp#27;[32m&amp#27;[1m"description"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story12SearchCategorySteps.categoryIncludesFields(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-]]></system-out>
+  <testcase name="Deleting an existing todo (Normal Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Deleting the same todo twice (Alternate Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
+  </testcase>
+  <testcase name="Deleting a non-existent todo (Error Flow)" classname="Delete a Todo" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@stories16to20&apos; did not match this scenario"/>
   </testcase>
 </testsuite>
