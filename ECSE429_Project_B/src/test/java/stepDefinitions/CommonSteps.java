@@ -6,10 +6,10 @@ import java.net.http.*;
 import java.net.URI;
 
 public class CommonSteps {
-    
+
     private static final String BASE_URL = "http://localhost:4567";
     private static final HttpClient client = HttpClient.newHttpClient();
-    
+
     // Shared response holder for all step definition classes
     public static HttpResponse<String> lastResponse;
 

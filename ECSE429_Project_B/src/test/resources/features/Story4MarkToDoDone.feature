@@ -7,11 +7,11 @@ Feature: Mark Todo as Done
     And at least one todo exists
 
   Scenario: Marking a todo as done (Normal Flow)
-    When the user marks todo with id 3 as done
+    When the user marks todo with id 1 as done
     Then the response status should be 200
 
   Scenario: Marking an already done todo (Alternate Flow)
-    When the user marks todo with id 3 as done
+    When the user marks todo with id 1 as done
     Then the response status should be 200
 
   Scenario: Marking a non-existent todo as done (Error Flow)

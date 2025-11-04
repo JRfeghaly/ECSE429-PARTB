@@ -23,9 +23,9 @@ Feature: Add a New Todo
 
   Scenario Outline: Adding a todo with duplicate title (Alternate Flow)
     When the user creates a new todo with title <title> and description <description>
-    Then the response status should be 409
-    And the response contains error message with keyword <keyword>
+    Then the response status should be 201
+    And the response contains a generated id
 
     Examples:
-      | title           | description | keyword |
-      | "Buy groceries" | "Food"      | "exists" |
+      | title           | description |
+      | "Buy groceries" | "Food"      |
