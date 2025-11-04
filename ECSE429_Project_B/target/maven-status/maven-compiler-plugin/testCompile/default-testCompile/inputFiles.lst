@@ -1,6 +1,12 @@
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story15LinkCategoryRelationsSteps.java
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story11CreateCategorySteps.java
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story12SearchCategorySteps.java
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/runners/TestRunner.java
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story13UpdateCategorySteps.java
-/Users/jason/Desktop/McGill/U3/ECSE429/Project/partB/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story14DeleteCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story15LinkCategoryRelationsSteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story13UpdateCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story18LinkTodoToCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story17RemoveTaskFromProjectSteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story14DeleteCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story19LinkProjectToCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/runners/TestRunner.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story20GetTodosByCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/CommonSteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story16CreateTaskToProjectSteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story12SearchCategorySteps.java
+/Users/antoinefeghali/Desktop/McGill Courses/Fall 2025/ECSE 429/project_part2/ECSE429-PARTB/ECSE429_Project_B/src/test/java/stepDefinitions/Story11CreateCategorySteps.java

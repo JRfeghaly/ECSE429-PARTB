@@ -14,11 +14,6 @@ public class Story12SearchCategorySteps {
     private JSONArray categoriesArray;
     private JSONObject category;
 
-    @Given("the server is running")
-    public void theServerIsRunning() {
-        RestAssured.get(BASE_URL + "/categories").then().statusCode(200);
-    }
-
     @Given("categories with the following details exist")
     public void categoriesExist(io.cucumber.datatable.DataTable dataTable) {
         // Create categories based on input table
