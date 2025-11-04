@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="1.042" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\target\test-classes;C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\target\classes;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite\1.10.0\junit-platform-suite-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.0\junit-platform-suite-api-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.0\junit-platform-suite-engine-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.0\junit-platform-suite-commons-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.15.0\cucumber-junit-platform-engine-7.15.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire17950041560612393615\surefirebooter-20251103213323059_3.jar C:\Users\Admin\AppData\Local\Temp\surefire17950041560612393615 2025-11-03T21-33-22_039-jvmRun1 surefire-20251103213323059_1tmp surefire_0-20251103213323059_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\target\test-classes;C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\target\classes;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite\1.10.0\junit-platform-suite-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.0\junit-platform-suite-api-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.0\junit-platform-suite-engine-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.0\junit-platform-suite-commons-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Admin\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.15.0\cucumber-junit-platform-engine-7.15.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire17950041560612393615\surefirebooter-20251103213323059_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="cucumber.plugin" value="pretty, html:target/cucumber-report.html"/>
+    <property name="java.runtime.version" value="17.0.16+8"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.16+8"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.2.4"/>
+    <property name="java.version" value="17.0.16"/>
+    <property name="user.dir" value="C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Mozilla Firefox;C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;c:\Users\Admin\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\.dotnet\tools;C:\Program Files\PostgreSQL\17\bin;C:\Program Files\Ngrok;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\Java\jdk-23\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Users\Admin\AppData\Local\Programs\cursor\resources\app\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.16+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Retrieving all existing todos (Normal Flow)" classname="View All Todos" time="0.332">
+    <system-out><![CDATA[
+Scenario: Retrieving all existing todos (Normal Flow) &amp#27;[90m# features/Story1ViewAllToDos.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                         &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves all todos&amp#27;[0m                   &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_user_retrieves_all_todos()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m              &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains a list of todos&amp#27;[0m           &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_response_contains_list_of_todos()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.022">
+    <system-out><![CDATA[
+Scenario Outline: Retrieving a specific todo by ID (Alternate Flow) &amp#27;[90m# features/Story1ViewAllToDos.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_user_retrieves_the_todo_with_id(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_response_contains_todo_with_id(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.031">
+    <system-out><![CDATA[
+Scenario Outline: Retrieving a non-existent todo by ID (Error Flow) &amp#27;[90m# features/Story1ViewAllToDos.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m99&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_user_retrieves_the_todo_with_id(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.016">
+    <system-out><![CDATA[
+Scenario Outline: Adding a valid new todo (Normal Flow)                                            &amp#27;[90m# features/Story2AddNewToDo.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                      &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user creates a new todo with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Plan trip"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Book flights and hotel"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_user_creates_todo_with_title_and_description(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains a generated id&amp#27;[0m                                                         &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_response_contains_generated_id()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe todo with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Plan trip"&amp#27;[0m&amp#27;[32m exists&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_todo_with_title_exists(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.012">
+    <system-out><![CDATA[
+Scenario Outline: Adding a todo with duplicate title (Alternate Flow)                &amp#27;[90m# features/Story2AddNewToDo.feature:31&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                        &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user creates a new todo with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy groceries"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Food"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_user_creates_todo_with_title_and_description(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains a generated id&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_response_contains_generated_id()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.024">
+    <system-out><![CDATA[
+Scenario Outline: Retrieving a specific todo by ID (Alternate Flow) &amp#27;[90m# features/Story1ViewAllToDos.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_user_retrieves_the_todo_with_id(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_response_contains_todo_with_id(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.018">
+    <system-out><![CDATA[
+Scenario Outline: Retrieving a non-existent todo by ID (Error Flow) &amp#27;[90m# features/Story1ViewAllToDos.feature:31&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user retrieves the todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.the_user_retrieves_the_todo_with_id(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.015">
+    <system-out><![CDATA[
+Scenario Outline: Adding a valid new todo (Normal Flow)                                         &amp#27;[90m# features/Story2AddNewToDo.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user creates a new todo with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Clean kitchen"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Organize pantry"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_user_creates_todo_with_title_and_description(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                                                        &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains a generated id&amp#27;[0m                                                      &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_response_contains_generated_id()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe todo with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Clean kitchen"&amp#27;[0m&amp#27;[32m exists&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_todo_with_title_exists(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Adding a todo without a title (Error Flow)" classname="Add a New Todo" time="0.012">
+    <system-out><![CDATA[
+Scenario: Adding a todo without a title (Error Flow)                       &amp#27;[90m# features/Story2AddNewToDo.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user creates a todo with empty title and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"No title"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_user_creates_todo_with_empty_title(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response contains error message with keyword &amp#27;[0m&amp#27;[32m&amp#27;[1m"title"&amp#27;[0m             &amp#27;[90m# stepDefinitions.Story2AddANewToDo.the_response_contains_error_with_keyword(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Updating a todo&apos;s title and description (Normal Flow)" classname="Update an Existing Todo" time="0.029">
+    <system-out><![CDATA[
+Scenario: Updating a todo's title and description (Normal Flow)                                                        &amp#27;[90m# features/Story3UpdateToDo.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                                          &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                                                                         &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user updates todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m to have title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy groceries and snacks"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy fruits and chips"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story3UpdateTodo.the_user_updates_todo_with_title_and_description(int,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                                               &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m has title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy groceries and snacks"&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Story3UpdateTodo.the_todo_with_id_has_title(int,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Updating only the description (Alternate Flow)" classname="Update an Existing Todo" time="0.023">
+    <system-out><![CDATA[
+Scenario: Updating only the description (Alternate Flow)                                           &amp#27;[90m# features/Story3UpdateToDo.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                      &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                                                     &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user updates todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m to have title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy groceries"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Only fruits"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story3UpdateTodo.the_user_updates_todo_with_title_and_description(int,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m has title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Buy groceries"&amp#27;[0m                                                 &amp#27;[90m# stepDefinitions.Story3UpdateTodo.the_todo_with_id_has_title(int,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Updating a non-existent todo (Error Flow)" classname="Update an Existing Todo" time="0.014">
+    <system-out><![CDATA[
+Scenario: Updating a non-existent todo (Error Flow)                                                 &amp#27;[90m# features/Story3UpdateToDo.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                                                                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                                                                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user updates todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m99&amp#27;[0m&amp#27;[32m to have title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Ghost Todo"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"Does not exist"&amp#27;[0m &amp#27;[90m# stepDefinitions.Story3UpdateTodo.the_user_updates_todo_with_title_and_description(int,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Marking a todo as done (Normal Flow)" classname="Mark Todo as Done" time="0.024">
+    <system-out><![CDATA[
+Scenario: Marking a todo as done (Normal Flow) &amp#27;[90m# features/Story4MarkToDoDone.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                  &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user marks todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m as done&amp#27;[0m   &amp#27;[90m# stepDefinitions.Story4MarkToDoDone.the_user_marks_todo_as_done(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m       &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Marking an already done todo (Alternate Flow)" classname="Mark Todo as Done" time="0.023">
+    <system-out><![CDATA[
+Scenario: Marking an already done todo (Alternate Flow) &amp#27;[90m# features/Story4MarkToDoDone.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                           &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user marks todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m as done&amp#27;[0m            &amp#27;[90m# stepDefinitions.Story4MarkToDoDone.the_user_marks_todo_as_done(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Marking a non-existent todo as done (Error Flow)" classname="Mark Todo as Done" time="0.023">
+    <system-out><![CDATA[
+Scenario: Marking a non-existent todo as done (Error Flow) &amp#27;[90m# features/Story4MarkToDoDone.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                              &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                             &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user marks todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m99&amp#27;[0m&amp#27;[32m as done&amp#27;[0m              &amp#27;[90m# stepDefinitions.Story4MarkToDoDone.the_user_marks_todo_as_done(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                   &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting an existing todo (Normal Flow)" classname="Delete a Todo" time="0.023">
+    <system-out><![CDATA[
+Scenario: Deleting an existing todo (Normal Flow) &amp#27;[90m# features/Story5DeleteToDo.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                     &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user deletes todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m            &amp#27;[90m# stepDefinitions.Story5DeleteToDo.the_user_deletes_todo(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m          &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting the same todo twice (Alternate Flow)" classname="Delete a Todo" time="0.022">
+    <system-out><![CDATA[
+Scenario: Deleting the same todo twice (Alternate Flow) &amp#27;[90m# features/Story5DeleteToDo.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                           &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user deletes todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Story5DeleteToDo.the_user_deletes_todo(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe user deletes todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m                   &amp#27;[90m# stepDefinitions.Story5DeleteToDo.the_user_deletes_todo(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting a non-existent todo (Error Flow)" classname="Delete a Todo" time="0.016">
+    <system-out><![CDATA[
+Scenario: Deleting a non-existent todo (Error Flow) &amp#27;[90m# features/Story5DeleteToDo.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe server is running&amp#27;[0m                       &amp#27;[90m# stepDefinitions.CommonSteps.the_server_is_running()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mat least one todo exists&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Story1ViewAllToDos.at_least_one_todo_exists()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user deletes todo with id &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m            &amp#27;[90m# stepDefinitions.Story5DeleteToDo.the_user_deletes_todo(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m            &amp#27;[90m# stepDefinitions.CommonSteps.the_response_status_should_be(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
