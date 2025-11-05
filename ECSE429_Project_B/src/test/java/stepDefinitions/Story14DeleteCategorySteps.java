@@ -6,8 +6,10 @@ import io.cucumber.datatable.DataTable;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Story14DeleteCategorySteps {
@@ -20,12 +22,13 @@ public class Story14DeleteCategorySteps {
 
     @Given("the server is running for delete category")
     public void theServerIsRunning() {
-        RestAssured.get(BASE_URL + "/categories").then().statusCode(200);
+        RestAssured.get(BASE_URL + "/categories")
+                .then()
+                .statusCode(200);
     }
 
     @Given("categories with the following details exist for delete category")
     public void categoriesExist(DataTable dataTable) {
-        // Clean up all categories before creating new ones
         Response getResponse = RestAssured.get(BASE_URL + "/categories");
         if (getResponse.statusCode() == 200 && getResponse.jsonPath().getList("categories") != null) {
             var existingIds = getResponse.jsonPath().getList("categories.id");
@@ -34,18 +37,22 @@ public class Story14DeleteCategorySteps {
             }
         }
 
-        // Create test categories
         dataTable.asMaps().forEach(row -> {
             String title = row.get("title").replace("\"", "");
             String description = row.get("description").replace("\"", "");
-            JSONObject body = new JSONObject().put("title", title).put("description", description);
+
+            JSONObject body = new JSONObject()
+                    .put("title", title)
+                    .put("description", description);
 
             Response postResponse = RestAssured.given()
                     .contentType("application/json")
                     .body(body.toString())
                     .post(BASE_URL + "/categories");
 
-            assertEquals(201, postResponse.statusCode(), "Failed to create test category: " + title);
+            assertEquals(201, postResponse.statusCode(),
+                    "Failed to create category for delete test: " + title);
+
             String id = postResponse.jsonPath().getString("id");
             categoryIds.put(title, id);
         });
@@ -63,17 +70,8 @@ public class Story14DeleteCategorySteps {
 
     @Then("the delete server responds with status {int}")
     public void deleteServerRespondsWithStatus(int expectedStatus) {
-        assertNotNull(response, "Response was null — DELETE request failed to execute");
-
-        int actualStatus = response.statusCode();
-
-        // ✅ Adjust for Thingifier API behavior — allow 404 instead of 400 if applicable
-        if (expectedStatus == 400 && actualStatus == 404) {
-            System.out.println("⚠️ Server returned 404 instead of 400 for invalid ID — acceptable for Thingifier.");
-            return;
-        }
-
-        assertEquals(expectedStatus, actualStatus,
+        assertNotNull(response, "Response was null — delete operation did not execute");
+        assertEquals(expectedStatus, response.statusCode(),
                 "Unexpected HTTP status from DELETE /categories/:id");
     }
 
@@ -106,6 +104,7 @@ public class Story14DeleteCategorySteps {
         String body = response.asString();
         System.out.println("🔍 Delete response body: " + body);
 
+        // Thingifier returns "Could not find" or "errorMessages" array
         boolean messageFound =
                 body.toLowerCase().contains("could not find") ||
                         body.toLowerCase().contains("error") ||
@@ -131,7 +130,6 @@ public class Story14DeleteCategorySteps {
         boolean messageFound =
                 responseBody.toLowerCase().contains("error") ||
                         responseBody.toLowerCase().contains("invalid") ||
-                        responseBody.toLowerCase().contains("could not find") ||
                         responseBody.contains(expectedMessage.replace("\"", ""));
 
         assertTrue(messageFound,
