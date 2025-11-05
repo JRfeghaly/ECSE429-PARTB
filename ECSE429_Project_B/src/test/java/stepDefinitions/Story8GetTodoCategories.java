@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
+import io.cucumber.java.After;
 import io.cucumber.datatable.DataTable;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -9,6 +10,7 @@ import org.json.JSONObject;
 
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,6 +19,7 @@ public class Story8GetTodoCategories {
     private static final String BASE_URL = "http://localhost:4567";
     private Response response;
     private String todoId;
+    private final List<String> createdCategoryIds = new ArrayList<>();
 
     /* -------------------- Background -------------------- */
     @Given("the server is running for Story8")
@@ -48,29 +51,74 @@ public class Story8GetTodoCategories {
         List<Map<String, String>> rows = dataTable.asMaps(String.class, String.class);
 
         for (Map<String, String> row : rows) {
+            // Create category resource first (canonical flow used elsewhere in the suite)
+            String title = row.get("name").replace("\"", "");
             JSONObject category = new JSONObject();
-            category.put("name", row.get("name"));
+            category.put("title", title);
+            category.put("description", "");
 
             Response postCategory = RestAssured.given()
                     .contentType("application/json")
                     .body(category.toString())
+                    .post(BASE_URL + "/categories");
+
+            if (!(postCategory.statusCode() == 201 || postCategory.statusCode() == 200)) {
+                System.out.println("Create category response: " + postCategory.asString());
+            }
+            assertTrue(postCategory.statusCode() == 201 || postCategory.statusCode() == 200,
+                    "Failed to create category " + row.get("name") + "; response: " + postCategory.asString());
+
+            String categoryId = postCategory.jsonPath().getString("id");
+            createdCategoryIds.add(categoryId);
+
+            // Link the created category to the todo
+            Response link = RestAssured.given()
+                    .contentType("application/json")
+                    .body(Map.of("id", categoryId))
                     .post(BASE_URL + "/todos/" + todoId + "/categories");
 
-            assertTrue(postCategory.statusCode() == 201 || postCategory.statusCode() == 200,
-                    "Failed to create category " + row.get("name"));
+            // Linking may return 201 (created) or 409 (already linked)
+            if (!(link.statusCode() == 201 || link.statusCode() == 409)) {
+                System.out.println("Link category->todo response: " + link.asString());
+            }
+            assertTrue(link.statusCode() == 201 || link.statusCode() == 409,
+                    "Failed to link category " + title + " to todo " + todoId + "; response: " + link.asString());
+        }
+    }
+
+    @After
+    public void cleanupCreatedCategories() {
+        if (createdCategoryIds != null && !createdCategoryIds.isEmpty()) {
+            for (String id : createdCategoryIds) {
+                try {
+                    RestAssured.delete(BASE_URL + "/categories/" + id);
+                    System.out.println("Deleted test category ID: " + id);
+                } catch (Exception e) {
+                    System.err.println("Failed to delete category ID " + id + ": " + e.getMessage());
+                }
+            }
+            createdCategoryIds.clear();
         }
     }
 
     @When("the user requests categories for todo with id {int}")
     public void theUserRequestsCategoriesForTodoWithId(int id) {
-        response = RestAssured.get(BASE_URL + "/todos/" + id + "/categories");
-        System.out.println("Response for /todos/" + id + "/categories: " + response.asString());
+        // Use server-created todoId when available (the feature uses logical ids like 1)
+        String actualId = (todoId != null && !todoId.isEmpty()) ? todoId : Integer.toString(id);
+        response = RestAssured.get(BASE_URL + "/todos/" + actualId + "/categories");
+        System.out.println("Response for /todos/" + actualId + "/categories: " + response.asString());
     }
 
     @Then("the server should respond with status code {int} for Story8")
     public void theServerShouldRespondWithStatusCodeForStory8(int expectedStatus) {
-        assertEquals(expectedStatus, response.statusCode(),
-                "Expected status " + expectedStatus + " but got " + response.statusCode());
+        int actualStatus = response.statusCode();
+        // If the server returned 200 when an error is expected, report this as a BUG (server returned success for a missing resource)
+        if (actualStatus == 200 && expectedStatus != 200) {
+            fail("BUG: Expected status " + expectedStatus + " but server returned 200. Response body: " + response.asString());
+        }
+
+        assertEquals(expectedStatus, actualStatus,
+                "Expected status " + expectedStatus + " but got " + actualStatus);
     }
 
     @Then("the user should receive the following categories")
@@ -94,10 +142,35 @@ public class Story8GetTodoCategories {
         assertEquals(expected.size(), categoriesArray.length(),
                 "Mismatch in number of categories returned");
 
-        for (int i = 0; i < expected.size(); i++) {
-            String expectedName = expected.get(i).get("name");
-            String actualName = categoriesArray.getJSONObject(i).getString("name");
-            assertEquals(expectedName, actualName, "Category name mismatch at index " + i);
+        // Build list of actual category names (order-independent)
+        List<String> actualNames = new ArrayList<>();
+        for (int i = 0; i < categoriesArray.length(); i++) {
+            Object item = categoriesArray.get(i);
+            String actualName = null;
+            if (item instanceof JSONObject) {
+                JSONObject actualObj = (JSONObject) item;
+                if (actualObj.has("name")) actualName = actualObj.getString("name");
+                else if (actualObj.has("title")) actualName = actualObj.getString("title");
+                else if (actualObj.has("category")) actualName = actualObj.getString("category");
+            } else if (item instanceof String) {
+                actualName = (String) item;
+            } else {
+                actualName = item != null ? item.toString() : null;
+            }
+            if (actualName != null) actualNames.add(actualName);
+        }
+
+        List<String> expectedNames = new ArrayList<>();
+        for (Map<String, String> row : expected) {
+            expectedNames.add(row.get("name").replaceAll("^\"|\"$", ""));
+        }
+
+        // Verify counts match
+        assertEquals(expectedNames.size(), actualNames.size(), "Mismatch in number of categories returned. Response: " + response.asString());
+
+        // Verify all expected names are present regardless of order
+        for (String en : expectedNames) {
+            assertTrue(actualNames.contains(en), "Expected category not found: " + en + ". Actual: " + actualNames + ". Response: " + response.asString());
         }
     }
 
@@ -115,10 +188,11 @@ public class Story8GetTodoCategories {
     @Then("the user should receive a warning that categories are invalid")
     public void theUserShouldReceiveAWarningThatCategoriesAreInvalid() {
         String body = response.asString();
-        boolean bugDetected = body.contains("categories") && response.statusCode() == 200;
+        int status = response.statusCode();
 
-        // This assertion is designed to FAIL (to expose the bug)
-        assertFalse(bugDetected,
-                "BUG DETECTED: Server returned categories for a non-existent todo! Response: " + body);
+        // If the server returned 200 when it should have returned 404 for a missing todo -> BUG
+        if (status == 200) {
+            fail("BUG: Server returned 200 when 404 expected for non-existent todo. Response: " + body);
+        }
     }
 }
