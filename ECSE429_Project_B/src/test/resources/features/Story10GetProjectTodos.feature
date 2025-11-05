@@ -25,3 +25,9 @@ Feature: Retrieve todos from a project
         When the user requests tasks for project with id 999
         Then the server should respond with an error status 404
         And the user should not receive any tasks
+
+    Scenario: Retrieve todos for an existing project with no tasks (Alternate Flow)
+        Given a project with id 2 exists
+        When the user requests tasks for project with id 2
+        Then the server should respond with status 200
+        And the user should not receive any tasks
