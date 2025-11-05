@@ -25,3 +25,10 @@ Feature: Retrieve categories from a todo
     When the user requests categories for todo with id 99
     Then the server should respond with status code 404 for Story8
     And the user should receive a warning that categories are invalid
+
+  Scenario: Retrieve categories for an existing todo with no categories (Alternate Flow)
+    Given a todo exists with id 2
+    When the user requests categories for todo with id 2
+    Then the server should respond with status code 200 for Story8
+    And the user should receive the following categories
+      | name |
