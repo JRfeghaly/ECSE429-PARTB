@@ -1,4 +1,5 @@
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story11CreateCategorySteps.java
+C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story9DeleteStudyProject.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story1ViewAllToDos.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story4MarkToDoDone.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story12SearchCategorySteps.java
@@ -6,11 +7,15 @@ C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\te
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story18LinkTodoToCategorySteps.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\runners\TestRunner.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story14DeleteCategorySteps.java
+C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story10GetProjectTodos.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story16CreateTaskToProjectSteps.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\CommonSteps.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story15LinkTodoProjectCategorySteps.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story19LinkProjectToCategorySteps.java
+C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story7UpdateStudyProject.java
+C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story8GetTodoCategories.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story5DeleteToDo.java
+C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story6CreateStudyPlanProject.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story3UpdateTodo.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story20GetTodosByCategorySteps.java
 C:\Users\Admin\Desktop\mcgill\F25\ECSE429\ECSE429-PARTB\ECSE429_Project_B\src\test\java\stepDefinitions\Story17RemoveTaskFromProjectSteps.java

@@ -2,7 +2,10 @@ stepDefinitions\Story14DeleteCategorySteps.class
 stepDefinitions\Story19LinkProjectToCategorySteps.class
 stepDefinitions\Story11CreateCategorySteps.class
 stepDefinitions\Story2AddANewToDo.class
+stepDefinitions\Story7UpdateStudyProject.class
 stepDefinitions\Story18LinkTodoToCategorySteps.class
+stepDefinitions\Story9DeleteStudyProject.class
+stepDefinitions\Story8GetTodoCategories.class
 stepDefinitions\Story4MarkToDoDone.class
 stepDefinitions\CommonSteps.class
 stepDefinitions\Story20GetTodosByCategorySteps.class
@@ -10,8 +13,10 @@ stepDefinitions\Story3UpdateTodo.class
 stepDefinitions\Story12SearchCategorySteps.class
 stepDefinitions\Story1ViewAllToDos.class
 runners\TestRunner.class
+stepDefinitions\Story6CreateStudyPlanProject.class
 stepDefinitions\Story5DeleteToDo.class
 stepDefinitions\Story15LinkTodoProjectCategorySteps.class
 stepDefinitions\Story13UpdateCategorySteps.class
+stepDefinitions\Story10GetProjectTodos.class
 stepDefinitions\Story16CreateTaskToProjectSteps.class
 stepDefinitions\Story17RemoveTaskFromProjectSteps.class
